@@ -1,16 +1,16 @@
 package org.meeuw.test;
 
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.meeuw.test.domain.a.A;
+import org.springframework.web.bind.annotation.*;
 
-@RestController("/")
+@org.springframework.stereotype.Controller
+
+@RequestMapping("/")
 public class Controller {
 
-    @GetMapping
-    public ResponseEntity<String> get() {
-        return ResponseEntity.ok("GET");
+    @RequestMapping(method = RequestMethod.GET, produces = "application/xml")
+    @ResponseBody
+    public A get() {
+        return new A();
     }
 }
