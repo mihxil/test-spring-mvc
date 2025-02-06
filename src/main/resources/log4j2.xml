@@ -3,7 +3,7 @@
   <Properties>
     <Property name="dir">${sys:catalina.base:-.}/logs</Property>
     <Property name="postfix">.log.%d{yyy-MM-dd}</Property>
-    <Property name="consoleLevelWithDefault">${sys:consoleLevel:-WARN}</Property>
+    <Property name="consoleLevelWithDefault">${sys:consoleLevel:-DEBUG}</Property>
   </Properties>
   <Appenders>
 

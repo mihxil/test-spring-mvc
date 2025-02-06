@@ -9,6 +9,4 @@
 ">
     <context:component-scan base-package="org.meeuw.test.servlet" />
 
-    <bean class="org.meeuw.test.servlet.ServletConfiguration" />
-
 </beans>
