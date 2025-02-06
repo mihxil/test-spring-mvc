@@ -7,9 +7,8 @@
                 http://www.springframework.org/schema/context
    https://www.springframework.org/schema/context/spring-context.xsd
 ">
+    <context:component-scan base-package="org.meeuw.test.servlet" />
 
-
-
-
+    <bean class="org.meeuw.test.servlet.ServletConfiguration" />
 
 </beans>

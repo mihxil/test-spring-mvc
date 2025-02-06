@@ -1,4 +1,4 @@
-package org.meeuw.test;
+package org.meeuw.test.servlet;
 
 
 import jakarta.xml.bind.Marshaller;
@@ -8,11 +8,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.xml.MarshallingHttpMessageConverter;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
 
 @Configuration
+@Component
 public class Jaxb2Configurer {
 
     @Bean

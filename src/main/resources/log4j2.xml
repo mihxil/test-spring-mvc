@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Configuration status="INFO">
+  <Properties>
+    <Property name="dir">${sys:catalina.base:-.}/logs</Property>
+    <Property name="postfix">.log.%d{yyy-MM-dd}</Property>
+    <Property name="consoleLevelWithDefault">${sys:consoleLevel:-WARN}</Property>
+  </Properties>
+  <Appenders>
+
+    <Console name="console">
+      <PatternLayout pattern="%d{ISO8601}&#x09;%p&#x09;%m%n" charset="UTF-8"/>
+    </Console>
+
+  </Appenders>
+  <Loggers>
+    <Root level="INFO">
+
+      <AppenderRef ref="console" level="${consoleLevelWithDefault}"/>
+    </Root>
+  </Loggers>
+</Configuration>
